@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=YouTube Music TUI
+GenericName=YouTube Music Player
+Comment=Lightweight Terminal UI (TUI) and controller for YouTube Music Desktop
+Exec=kitty --title ytmusic -e /home/pez/.local/bin/yt-music-tui
+Icon=/home/pez/.local/share/icons/yt-music-tui.svg
+Terminal=false
+Categories=AudioVideo;Audio;Music;Player;
+Keywords=youtube;music;ytmusic;tui;audio;player;
+StartupWMClass=kitty
