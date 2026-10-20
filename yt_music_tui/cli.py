@@ -11,13 +11,13 @@ from .client import YTMusicClient, ensure_api_server_enabled, ensure_background_
 from .tui import run_tui
 
 
-def output_waybar(client: YTMusicClient, max_len: int = 38) -> None:
+def output_waybar(client: YTMusicClient, max_len: int = 34) -> None:
     song = client.get_song()
     if not song:
         print(
             json.dumps(
                 {
-                    "text": "󰎆 YT Music",
+                    "text": "󰎆",
                     "tooltip": "YouTube Music (click to open TUI)",
                     "class": "stopped",
                 }
