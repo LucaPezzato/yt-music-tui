@@ -785,6 +785,8 @@ def ensure_api_server_enabled(hide_window: bool = True) -> bool:
             data = {}
 
     options = data.setdefault("options", {})
+    options["resumeOnStart"] = False
+    data["url"] = "https://music.youtube.com"
     if hide_window:
         data["window-maximized"] = False
         options["appVisible"] = False
